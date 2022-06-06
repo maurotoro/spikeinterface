@@ -15,6 +15,8 @@ from .common_reference import CommonReferenceRecording, common_reference
 from .remove_artifacts import RemoveArtifactsRecording, remove_artifacts
 from .remove_bad_channels import RemoveBadChannelsRecording, remove_bad_channels
 from .phase_shift import PhaseShiftRecording, phase_shift
+from .resample import ResampleRecording, resample
+
 
 preprocessers_full_list = [
     # filter stuff
@@ -32,7 +34,7 @@ preprocessers_full_list = [
 
     # re-reference
     CommonReferenceRecording,
-    
+
     PhaseShiftRecording,
 
     # misc
@@ -42,7 +44,7 @@ preprocessers_full_list = [
     RemoveBadChannelsRecording,
 
     # TODO: @alessio this one  is for you
-    # ResampleRecording,
+    ResampleRecording,
 
 ]
 
